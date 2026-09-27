@@ -1,0 +1,8 @@
+{
+  "manifestUrl": "https://raw.githubusercontent.com/JaeWani/Server_Launcher/main/release/manifest.json",
+  "prismDownloadUrl": "https://github.com/PrismLauncher/PrismLauncher/releases/download/11.1.0/PrismLauncher-Windows-MSVC-Portable-11.1.0.zip",
+  "instanceId": "cobblemon-test-server",
+  "instanceName": "Cobblemon Test Server",
+  "dataFolderName": "CobblemonTestLauncher",
+  "serverAddress": ""
+}

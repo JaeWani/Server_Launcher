@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cobblemon Test Launcher</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">TEST SERVER</p>
+      <h1>Cobblemon Test Launcher</h1>
+      <p id="version">업데이트 정보를 확인하는 중…</p>
+      <section class="status" aria-live="polite">
+        <strong id="status-title">준비 중</strong>
+        <span id="status-detail"></span>
+      </section>
+      <div class="actions">
+        <button id="update" class="secondary">업데이트만 하기</button>
+        <button id="play" class="primary">업데이트 후 시작</button>
+      </div>
+      <button id="folder" class="link">데이터 폴더 열기</button>
+      <p class="hint">정식 Minecraft: Java Edition 계정이 필요합니다.</p>
+    </main>
+    <script src="renderer.js"></script>
+  </body>
+</html>

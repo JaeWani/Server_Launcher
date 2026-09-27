@@ -1,0 +1,35 @@
+{
+  "name": "cobblemon-test-launcher",
+  "version": "0.1.0",
+  "author": "JaeWani",
+  "private": true,
+  "description": "Windows beta launcher for the Cobblemon test server.",
+  "main": "src/main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "build:release": "node scripts/build-release.mjs",
+    "dist:win": "electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "^37.0.0",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
+    "appId": "kr.serverproject.cobblemon-test-launcher",
+    "productName": "Cobblemon Test Launcher",
+    "files": [
+      "src/**/*",
+      "launcher-config.json",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "artifactName": "${productName}-${version}-Setup.${ext}"
+    }
+  },
+  "allowScripts": {
+    "electron@37.10.3": true
+  }
+}

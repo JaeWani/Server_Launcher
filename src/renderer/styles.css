@@ -1,0 +1,16 @@
+:root { color-scheme: dark; font-family: "Segoe UI", sans-serif; background: #101722; color: #edf4ff; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: radial-gradient(circle at top right, #1c4d62, #101722 58%); }
+main { width: 100%; padding: 42px; }
+.eyebrow { margin: 0 0 8px; color: #66d9e8; font-size: 12px; font-weight: 700; letter-spacing: 1.8px; }
+h1 { margin: 0; font-size: 29px; }
+#version { min-height: 24px; color: #b6c5d8; }
+.status { min-height: 72px; padding: 16px; border: 1px solid #31506a; border-radius: 12px; background: #132435bb; display: grid; gap: 6px; }
+.status span { color: #b6c5d8; font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.actions { display: flex; gap: 10px; margin-top: 18px; }
+button { border: 0; border-radius: 9px; padding: 12px 16px; cursor: pointer; font: inherit; font-weight: 650; }
+button:disabled { opacity: .55; cursor: wait; }
+.primary { flex: 1; color: #062128; background: #65dce9; }
+.secondary { color: #dcecff; background: #29435a; }
+.link { margin-top: 16px; padding-left: 0; color: #9ccfe5; background: transparent; font-size: 13px; }
+.hint { margin: 26px 0 0; color: #7f92a8; font-size: 12px; }
