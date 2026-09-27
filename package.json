@@ -1,6 +1,6 @@
 {
   "name": "cobblemon-test-launcher",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "JaeWani",
   "private": true,
   "description": "Windows beta launcher for the Cobblemon test server.",

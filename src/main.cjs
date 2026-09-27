@@ -11,9 +11,10 @@ function sendStatus(message, detail = '') {
 }
 
 function configPath() {
-  return app.isPackaged
-    ? path.join(process.resourcesPath, 'launcher-config.json')
-    : path.join(app.getAppPath(), 'launcher-config.json')
+  // electron-builder stores regular application files inside app.asar in a
+  // packaged build. app.getAppPath() resolves that archive in production and
+  // the project root in development, so it works in both cases.
+  return path.join(app.getAppPath(), 'launcher-config.json')
 }
 
 async function getContext() {
